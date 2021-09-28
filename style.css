@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bgupdated.PNG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 20%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 200px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.text-box{
+    width: 45%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+}
+
+.text-box h1{
+    font-size: 40px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 12px 34px;
+    font-size: 14px;
+    position: relative;
+
+}
+
+.hero-btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.img-div{
+    text-align: right;
+}
+
+.img-div img{
+    float:inherit;
+    height: auto;
+    width: 680px;
+    padding: 60px;
+    
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 15px;
+    }
+    .text-box p{
+        font-size: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #000;
+        height: 100vh;
+        width: 120px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+
+
+    }
+}
+
+/*------Services--------*/
+
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 120px;
+    padding-left: 80px;
+
+
+
+}
+
+.row{
+    margin-top: 2%;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.services-col{
+    width: 600px;
+    height: 350px;
+    flex-basis:15%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: slategrey;
+
+}
+.services-col img{
+    width: 80%;
+    border-radius: 5px;
+}
+
+.services-col p{
+    padding: 0;
+}
+
+.services-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+}
