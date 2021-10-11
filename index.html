@@ -8,41 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/logoUpdate.png"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">FinTech</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
 
-        </nav>
+    
+    <section class="header" id="home">
 
-        <div class="text-box">
-            <h1>Club Swan Partners is a technology-<br>first service essential to you and<br>your customers.</h1>
+        <div id="myHeader">
+            <nav>
+                <a href="index.html"><img src="images/logoUpdate.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fintech">FinTech</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+            </nav>
+    
+        </div>
+        
+
+        <div class="container">
+            <div class="text-div">
+                <h1>Club Swan Partners is a technology-first service essential to you and your customers.</h1>
             <br>
             <br>
-            <p>                 Integrate our membership rewards and concierge solution,<br>
-                 and our fiat and crypto services, into your business,for your<br>
+            <p> Integrate our membership rewards and concierge solution,
+                 and our fiat and crypto services, into your business,for your
                  customers and employees, with your brand.
             </p>
 
             
-            <a href="#" class="hero-btn">Contact Us</a>
+            <a href="contact.html" class="hero-btn">Contact Us</a>
+
+            </div>
+
+            <div class="img-div">
+                <img src="https://static.wixstatic.com/media/6d5916_b63d92e6c7be4806b1aae9e887daa1c2~mv2.png/v1/fill/w_744,h_660,al_c,q_90,usm_0.66_1.00_0.01/hero-image-tinied.webp" id="imghome">
+    
+            </div>
+            
             
         </div>
-        <div class="img-div">
-            <img src="images/partnershome.png" id="imghome">
-
-        </div>
+        
 
         
 
@@ -52,69 +70,1953 @@
 
 <!----------------Services-------------->
 
-<section class="services">
-    <h1>Our Services</h1>
+<section class="services" id="services" style="margin-bottom: 1%;">
+    <h2>Our Services</h2>
 
     <div class="row">
-        <div class="services-col">
-            <img src="images/servicesrewards.PNG">
-            <h3>REWARDS</h3>
+        <div class="services-col" id="rewardsBtn">
+           <img src="https://static.wixstatic.com/media/6d5916_0e2c5c6940f84b4fa98a8412e21563f9~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/gift_icon.webp">
+            <h4 >REWARDS</h4>
             <p>Your branded rewards program</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/servicesconcierge.PNG">
-            <h3>CONCIERGE</h3>
+        <div class="services-col" id="conciergeBtn" >
+            <img src="https://static.wixstatic.com/media/6d5916_a85ba4d70d5c4277b76c7ee6b4750cf6~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/concierge_icon.webp">
+            <h4>CONCIERGE</h4>
             <p>Your branded concierge</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/servicesapp.PNG">
-            <h3>APP</h3>
+        <div class="services-col" id="appBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_77c4972b56f34b589636f178e49b28b9~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/app_icon.webp">
+            <h4>APP</h4>
             <p>Your branded app to the modules you choose</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/serviceskyc.PNG">
-            <h3>KYC</h3>
+        <div class="services-col" id="kycBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_2eb4bdfa23b649439ac0a0f35be8120e~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/kyc_icon.webp">
+            <h4>KYC</h4>
             <p>Your branded KYC compliance</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/cardsupdate.PNG">
-            <h3>CARDS</h3>
+        <div class="services-col" id="cardsBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_41fc4aa5036e4967a8bf337486683a05~mv2.jpg/v1/crop/x_0,y_4,w_880,h_872/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/cards_icon.webp">
+            <h4>CARDS</h4>
             <p>Your branded private-label Mastercard</p>
 
         </div>
-        
-    </div>
-    <div class="row">
-        <div class="services-col">
-            <img src="images/servicesaccount.PNG">
-            <h3>ACCOUNTS</h3>
+
+        <div class="services-col" id="accBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_093e9b441dae418eb8cad405cbddd3eb~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/accounts_icon.webp">
+            <h4>ACCOUNTS</h4>
             <p>Your branded bank accounts</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/servicescryptocurrency.PNG">
-            <h3>CRYPTO</h3>
+        <div class="services-col" id="cryptoBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_dd6d32d058b6439284a3e324e58c7092~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/cryptocurrency_icon.webp">
+            <h4>CRYPTO</h4>
             <p>Your branded crypto wallets</p>
 
         </div>
-        <div class="services-col">
-            <img src="images/payments.PNG">
-            <h3>PAYMENTS</h3>
+        <div class="services-col" id="payBtn">
+            <img src="https://static.wixstatic.com/media/6d5916_322fc3c836964716b4d3eaac64ccb931~mv2.jpg/v1/crop/x_0,y_4,w_880,h_872/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01/traditional_currency_icon.webp">
+            <h4>PAYMENTS</h4>
             <p>Your branded payments platform</p>
 
         </div>
         
+    </div>
+
+
+    <div id="rewardsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_354f68f0c0644580a21ce66567b436af~mv2.jpg/v1/crop/x_0,y_0,w_999,h_1265/fill/w_503,h_637,al_c,q_80,usm_0.66_1.00_0.01/referral_01.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close">&times;</span>
+
+                </div>
+
+                <div>
+                    <h2 ><span >REWARDS</span></h2>
+
+                    <p><span >Provide instant savings and<br>
+                        cash-back rewards to your customers.​</span></p>
+
+
+                        <ul >
+                            <li>
+                            <span>Up to 22% instant cash-back rewards<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>Gift cards for friends or family members​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Instantly downloadable e-vouchers to use online or in store​</span>
+                            </li>
+                            <li>
+                                <span>Search functionality to help your customers find their favourite shops, restaurants and  Entertainment venues where they can take advantage of instant cash rewards.  Amazon, Target, Adidas, and hundreds more top brands and merchants​​</span>
+                            </li>
+                            <li>
+                                <span>Keep track of their instant rewards earnings</span>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="rewardsBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="rewardsForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+    </div>
+
+      <!--- concierge-->
+
+    <div id="conciergeModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="slidecontainer">
+            <div class="carousel">
+                <div class="slider">
+                    
+                    <section>
+                        <div class="modal-slide">
+            
+                            <div>
+                
+                                <img src="https://static.wixstatic.com/media/6d5916_8dd557137f4449d18bfa7ce5e7dca022~mv2.jpg/v1/fill/w_601,h_601,al_c,q_85,usm_0.66_1.00_0.01/shutterstock_1543615334_square.webp">
+                                
+                            </div>
+                            <div>
+                                <div class="slide-close">
+                                    <span class="close" id="conciergeClose">&times;</span>
+                
+                                </div>
+                
+                                <div>
+                                    <h2 ><span >24/7 Virtual Assistant and Concierge</span></h2>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >Provide a live chat concierge service to your customers, 
+                                        with your logo on it.​​</span></p>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >This is not a chat bot but a live person trained to deliver exception value and an unparalleled experience with each interaction​.​​</span></p>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >Gives your customers 24/7 access to our professional, multi–language concierge team. All requests, large or small, are handled with care and efficiency..​​</span></p>
+                                    
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 8%;"><span >Event & Ticket Procurement, Travel Planning and wholesale travel booking services, Reservations and Booking requests, Special requests, Product/Services payments, and more.​​​</span></p>
+                
+                
+                                        
+                                    
+                
+                                </div>
+                
+                                <div style="float: right; margin-right: 4%;">
+                                    <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                
+                                </div>
+                
+                
+                
+                                
+                                
+                
+                
+                                
+                            </div>
+                          
+                        </div>
+
+
+                    </section>
+                    <section>
+                        <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_6f9097af9ffa4ef7a41d32eb60594f69~mv2.jpeg/v1/fill/w_601,h_601,al_c,q_85,usm_0.66_1.00_0.01/chelsea-gates-0653_wY0nR.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div class="slide-close">
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >
+                                    LUXURY VACATIONS</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >Let us source and book your luxury vacations, we will help you plan your itinerary and take care of the reservations, while you enjoy your adventures for up to 40% less than standard rates. On a recent holiday booking to the Maldives, Club Swan prices were 21% cheaper than those quoted on Expedia, Booking.com and Hotels.com, saving the customer over $1,000 on a like for like comparison.*</span></p>
+            
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack2" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward2" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+                </section>
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_524248cd2ff141e28329b95a43ff7fc9~mv2.jpeg/v1/fill/w_599,h_595,al_c,q_80,usm_0.66_1.00_0.01/shutterstock_462101287.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div class="slide-close">
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >UNFORGETTABLE EXPERIENCES</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >
+                                    Gain access to unique and high demand experiences. Attend glamorous red-carpet events, swim with dolphins and turtles, get a private box or VIP tickets for sell-out shows. If you need an adrenaline rush, let us book you a gravity defying spin in a fighter jet, or an exhilarating ride with a professional formula one driver at legendary racetracks across the globe.​​
+                                </span></p>
+            
+                                
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack3" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward3" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_a7b881ea9c834f0eac1b4fc92786f5ad~mv2.png/v1/fill/w_580,h_580,al_c,q_85,usm_0.66_1.00_0.01/image21-e1591784742155.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div class="slide-close">
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >POLE POSITION AT SPORTING EVENTS</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >
+                                    Get the prime seats at major sporting events. Drink champagne in the pits at Formula One races, Enjoy Pink Gin and strawberries in front row seats while Nadal and Federer own the courts of the US Open. If you prefer something more physical, rub shoulders with Royalty while you stomp the divots on the polo fields, or do a round of golf on the fairways of the Hong Long Golf Club.
+                                    ​​</span>
+                                </p>
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack4" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward4" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_5f42a94b7a5241f28df8983c522c1db1~mv2.jpeg/v1/fill/w_607,h_607,al_c,q_85,usm_0.66_1.00_0.01/AdobeStock_3024181.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div class="slide-close">
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >LUXURY TRAVEL</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;">
+                                    <span >
+                                        Whether you need a super yacht, private jet or by rail on the Orient-Express, we make it happen. We can arrange VIP car rentals, helicopter transfers or just about any mode of transport you desire. You will also benefit from up to 50% off business and first-class flights as well as favourable rates on other luxury transport. If you don’t want to be in the driving seat, we will provide you with professional crew.​​
+                                </span>
+                                
+                                </p>
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack5" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward5" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="slide-more">
+
+                        <div class="grid-container">
+
+                            <div class="slide-header">
+                                <span class="close" id="conciergeClose">&times;</span>
+                                <span style="color: #fff;">
+                                    <h2 style="text-align: center;">
+                                        MORE SERVICES
+    
+                                    </h2>
+                                    
+                                </span>
+                              
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_e94e9e0b6b5541479d50165b8b4ab429~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/personal-shopping.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Personal Shopping
+                                        <br>
+                                        <br>
+                                        If you don’t have the time to shop, we can find that designer watch you spotted on a celebrity’s arm, or help you purchase your wardrobe for a night out or an exclusive beach or ski holiday. We can shop for furniture for your new home, co-ordinate designers and hire professional services.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_8dcf6473a84e4d8ea216b5e5bdc01720~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/business-event-management.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Business and personal event management
+                                        <br>
+                                        <br>
+                                        If you need to plan an event, whether it’s an exclusive home dinner party or a massive corporate launch, we can do it all for you. Let us give you design ideas for the décor, source the venue and set up the catering. We manage both private and corporate events. All you need to do is arrive.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_9e342d3537ba4601a35ef7022903a82e~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/health-wellness.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Health and wellness services
+                                        <br>
+                                        <br>
+                                        Access fabulous spas and treatment centres when you need a break. We can also help you source the best doctors and health professionals wherever you are in the world. From beauty treatments, plastic surgery or cosmetic dentistry, we can source the best professionals to suit your needs.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_729e79e879b4453a98feb7010ffafe6e~mv2.jpg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/vip-dining.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        VIP Dining
+                                        <br>
+                                        <br>
+                                        Having trouble getting a table at your favourite restaurant? Access our VIP dining and restaurant booking service to ensure you get the seat with a view. Exclusive reservations for the Chef’s table or your own private dining area. Staying in? get a Michelin Star chef to create a feast in your home.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_da9b68cd320642f9b25ae6282a966d70~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/event-access.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Preferential event access
+                                        <br>
+                                        <br>
+                                        Get premium tickets for events, theatres and concerts. Impress your friends with a private box or get up close and personal with your favourite bands and performers. Get a back-stage pass or VIP access to an event and arrive in style with a limousine and chauffeur and even a bodyguard if needed.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="slide-more-div">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_a933324baea241129eaa836c1ac9d29b~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/relocation-services.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Relocation services
+                                        <br>
+                                        <br>
+                                        Moving to a new location? Whether it’s a simple city move or an international relocation, we can help you access the services you will need to ensure your move is stress free. We can help with the setting up of bank accounts, legal issues, passports, licences, immigration and emigration services.
+                                    </p>
+                                </div>
+    
+                            </div>
+                
+                        
+                           <div class="slide-footer" style="text-align: right; float: right; margin-right: 4%;">
+    
+                                    <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack6" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward6" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                
+                            </div>
+
+                        </div>
+                        
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        
+                      
+                    </div>
+
+                </section>
+    
+                </div>
+    
+                <div class="controls">
+                    <span class="arrow left"> <i class="material-icons">
+                        keyboard_arrow_left
+                        </i> </span>
+                    <span class="arrow right"><i class="material-icons">
+                        keyboard_arrow_right
+                        </i></span>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+        
+      
+    
+
+
+      <!---APP-->
+
+    <div id="appModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            
+            <div>
+
+                <div>
+                    <h2 ><span >APP</span></h2>
+
+                    <p><span >Provide instant savings and<br>
+                        cash-back rewards to your customers.​</span></p>
+
+
+                        <ul >
+                            <li>
+                            <span>Up to 22% instant cash-back rewards<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>Gift cards for friends or family members​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Instantly downloadable e-vouchers to use online or in store​</span>
+                            </li>
+                            <li>
+                                <span>Search functionality to help your customers find their favourite shops, restaurants and  Entertainment venues where they can take advantage of instant cash rewards.  Amazon, Target, Adidas, and hundreds more top brands and merchants​​</span>
+                            </li>
+                            <li>
+                                <span>Keep track of their instant rewards earnings</span>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+
+                
+                
+                
+
+
+                
+            </div>
+
+            <div style="background-color: #fff;">
+                <div class="div-close">
+                    <span class="close" id="appClose" style="color: black;">&times;</span>
+
+                </div>
+
+                <div>
+                    <img src="https://static.wixstatic.com/media/6d5916_3d81c8b688d6409f9e96772c4e46a379~mv2.png/v1/fill/w_344,h_602,al_c,q_85,usm_0.66_1.00_0.01/traditional_currencies_shadow.webp" style="display:block;margin-left: auto;margin-right: auto; width: 60%;">
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="appBack" style="color: blue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="appForward" style="color: blue;" aria-hidden="true"></i>
+                
+                </div>
+
+                
+                
+            </div>
+          
+        </div>
+      
+    </div>
+
+
+      <!---KYC-->
+
+    <div id="kycModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_d89d6ef811af4c05949cf46b6b931dfe~mv2.jpg/v1/crop/x_1127,y_68,w_2490,h_2549/fill/w_550,h_563,al_c,q_80,usm_0.66_1.00_0.01/Abstract%20digital%20display%20with%20concept%20image%20KYC_.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="kycClose">&times;</span>
+
+                </div>
+
+                <div>
+                    <h2 ><span >KYC</span></h2>
+
+                    <p><span >Verifying your customer's identity using our automated verification tools.​</span></p>
+
+
+                        <ul >
+                            <li>
+                            <span>Customers can complete their KYC onboarding in as little as 10 minutes<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>Advanced Biometric technology and seamless integration ensure a quick yet viable validation of client identity​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Over 100 countries supported​​</span>
+                            </li>
+                            <li>
+                                <span>Enables you to meet global regulatory KYC (Know Your Customer) and AML (Anti-money Laundering) requirements</span>
+                            </li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="kycBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="kycForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+      </div>
+
+      <!---Cards-->
+
+      <div id="cardsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalcard-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_aed4cd7f14454fada5b334662ef97c47~mv2.jpg/v1/crop/x_0,y_0,w_974,h_1206/fill/w_456,h_560,al_c,q_80,usm_0.66_1.00_0.01/cards_overlay.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="cardsClose" >&times;</span>
+
+                </div>
+
+                <div>
+                    <h2 ><span >CARDS</span></h2>
+
+                    <p><span >Provide a card powered by Mastercard to your customers with your logo on it​</span></p>
+
+
+                        <ul style="font-size: 14px;">
+                            <li>
+                            <span>Spending with 150+ currencies anywhere in the world<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>US$15,000 daily card load limit​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Daily international ATM withdrawals up to US$1,500​</span>
+                            </li>
+                            <li>
+                                <span>Card currency of their choice: EUR GBP and USD ​</span>
+                            </li>
+                            <li>
+                                <span>Deposit additional funds by wire transfer in EUR GBP and USD</span>
+                            </li>
+                            <li>
+                                <span>Physical payment card powered by  Mastercard​​</span>
+                            </li>
+                            <li>
+                                <span>Physical cards are shipped globally by DHL direct to your customer​</span>
+                            </li>
+                            <li>
+                                <span>Move money from wallet to your card​</span>
+                            </li>
+                            <li>
+                                <span>Move money from card back to your wallet​</span>
+                            </li>
+                            <li>
+                                <span>View transactions​</span>
+                            </li>
+                            <li>
+                                <span>View Pin​</span>
+                            </li>
+                            <li>
+                                <span>Export statements in CSV/PDF​</span>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x"id="cardsBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="cardsForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+      </div>
+
+
+      <!---Accounts-->
+
+      <div id="accModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalcard-content">
+            
+            <div style="background-color: #fff;">
+
+                <img src="https://static.wixstatic.com/media/6d5916_f995701d020a4a7788ec25b55998f45f~mv2.png/v1/fill/w_308,h_601,al_c,q_85,usm_0.66_1.00_0.01/traditional_currencies_02.webp" style="display:block;margin-left: auto;margin-right: auto; width: 60%; ">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="accClose">&times;</span>
+
+                </div>
+
+                <div>
+                    <h2 ><span >ACCOUNTS</span></h2>
+
+                    <p><span >Provide an electronic money account to your customers with your logo on it​</span></p>
+
+
+                        <ul >
+                            <li>
+                            <span>Five traditional currency accounts, USD, GBP, EUR, CNY and JPY<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>Live real-time exchange rates 4 to 8% cheaper than many high street banks ​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Transfer funds in and out of your account with SEPA/SWIFT/Faster Payments/ Fed Wire​​</span>
+                            </li>
+                            <li>
+                                <span>Add funds to your account via bank transfer, credit or debit card, or by crypto transfer​</span>
+                            </li>
+                            <li>
+                                <span>Quick and easy remittance payments to external Mastercard cards. Not in the United States yet.​
+                                    Unlimited account and load limits  FCA regulated for your peace of mind ​</span>
+                            </li>
+                            <li>
+                                <span>24/7 Customer support​</span>
+                            </li>
+                            <li>
+                                <span>Export statements in CSV/PDF​</span>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="accBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="accForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+      </div>
+
+      <!---Crypto-->
+
+      <div id="cryptoModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalcard-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_263968bc332848178be120f5b34dfe67~mv2.jpg/v1/fill/w_520,h_645,al_c,q_80,usm_0.66_1.00_0.01/crypto.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="cryptoClose">&times;</span>
+
+                </div>
+
+                <div>
+                    <h2 ><span >CRYPTO</span></h2>
+
+                    <p style="margin-top: 1%;"><span >Provide cryptocurrency wallets to your customers, with your logo on them..​</span></p>
+
+
+                        <ul >
+                            <li>
+                            <span>Buy, sell, send, receive or store 9 different cryptocurrencies. (*constantly reviewing and adding new ones)​<br>
+                            ​</span>
+                            </li>
+                            <li>
+                            <span>Available Crypto wallets: Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Bitcoin Cash (BCH), Tether (USDT), BAT, Paxos (PAX), USD Coin (USDC) and EOS​​​</span><br>
+                            <span>​</span>
+                            </li>
+                            <li>
+                            <span>Quick and simple wallet to external wallet transfers. The crypto asset is held by the customer and under their control and direction​​​</span>
+                            </li>
+                            <li>
+                                <span>Sell your crypto for  traditional currencies.​</span>
+                            </li>
+                            <li>
+                                <span>The most competitive transaction and spread rates </span>
+                            </li>
+                            <li>
+                                <span>One simple rate for buy and sell. No hidden margin built into our prices​​</span>
+                            </li>
+                            <li>
+                                <span>Low fees from 0.5%</span>
+                            </li>
+                            <li>
+                                <span>Fund your account by transferring your crypto from other wallets, or by using a debit / credit card or bank transfer​</span>
+                            </li>
+                            <li>
+                                <span>Unlimited account and load limits available</span>
+                            </li>
+                            <li>
+                                <span>Customer to customer wallet transfers are free​​</span>
+                            </li>
+                            <li>
+                                <span>Seamlessly convert crypto to load onto payment cards​​</span>
+                            </li>
+                            <li>
+                                <span>24/7 Customer support</span>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="cryptoBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="cryptoForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+      </div>
+
+
+      <!---Payments-->
+
+    <div id="payModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_cf475ee15efd4544965f2f9fae794393~mv2.jpg/v1/fill/w_486,h_603,al_c,q_80,usm_0.66_1.00_0.01/contactless_payment.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="payClose">&times;</span>
+
+                </div>
+
+                <div style="margin-bottom: 40%;">
+                    <h2 ><span >PAYMENTS</span></h2>
+
+                    <p style="font-size: 18px;"><span >Make payments to your customers and employees from your platform.​</span></p>
+
+                    <p style="font-size: 18px;"><span >Instant payments to your customers and employees</span></p>
+                    
+
+
+                        
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="payBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="payForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+      </div>
+
+
+      <!----Slide  ---->
+
+
+      <div id="payModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <div>
+
+                <img src="https://static.wixstatic.com/media/6d5916_6f9097af9ffa4ef7a41d32eb60594f69~mv2.jpeg/v1/fill/w_601,h_601,al_c,q_85,usm_0.66_1.00_0.01/chelsea-gates-0653_wY0nR.webp">
+                
+            </div>
+            <div>
+                <div class="div-close">
+                    <span class="close" id="payClose">&times;</span>
+
+                </div>
+
+                <div style="margin-bottom: 40%;">
+                    <h2 ><span >LUXURY VACATIONS</span></h2>
+
+                    <p style="font-size: 18px;"><span >Make payments to your customers and employees from your platform.​</span></p>
+
+                    <p style="font-size: 18px;"><span >Instant payments to your customers and employees</span></p>
+                    
+
+
+                        
+                    
+
+                </div>
+
+                <div style="float: right; margin-right: 4%;">
+                    <i class="fa fa-caret-square-o-left fa-2x" id="payBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                    <i class="fa fa-caret-square-o-right fa-2x" id="payForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                
+                </div>
+                
+                
+
+
+                
+            </div>
+          
+        </div>
+      
+    </div>
+
+    <div class="clubswan">
+        <h2>
+            <span>
+                Become a
+
+            </span>
+            <span style="color: #1962c2;"> Club Swan</span>
+            <span> partner.</span>
+
+
+        </h2>
+
+
+    </div>
+
+    <div class="clubswan" style="text-align: center;">
+        <a href="contact.html" class="services-btn">Contact Us</a>
+    </div>
+
+
+    <div class="cards">
+        <div class="cards-div">
+            <h2>
+                <span style="color: #1962c2;"> Cards</span>
+    
+    
+            </h2>
+    
+            <p>
+                <span>
+                    Enhance your brand by offering customers access to pre-paid payment cards with your logo and design.
+                </span>
+    
+                <br>
+                <br>
+    
+                <span>
+                    Connect your customer card to their funds on your own platform, so that they can spend online and in-store and withdraw cash at ATMs.
+                </span>
+                <br>
+                <br>
+                <span>
+                    Available to your customers anywhere in the world.
+                </span>
+    
+    
+            </p>
+
+        </div>
+
+
+        <div>
+            <img src="https://static.wixstatic.com/media/6d5916_112cc11204ca46c1b39bdca83ce25dfd~mv2.png/v1/fill/w_408,h_413,al_c,q_85,usm_0.66_1.00_0.01/accounts_phone.webp">
+        </div>
+        
+
+
+    </div>
+
+    <div class="acccrypto">
+
+        <div class="acccrypto-imgdiv">
+            <img src="https://static.wixstatic.com/media/6d5916_a3c3bccd887d493fad2153987ffacba2~mv2.png/v1/crop/x_0,y_0,w_596,h_600/fill/w_408,h_408,al_c,q_85,usm_0.66_1.00_0.01/accounts_laptop.webp">
+        </div>
+
+        <div class="acccrypto-div">
+            <h2>
+                <span style="font-weight: bold; color: #1962c2;">Accounts and cryptocurrencies</span>
+    
+    
+            </h2>
+    
+            <p>
+                <span>
+                    Provide fiat accounts and cryptocurrency access to your customer on your platform, using your logo.
+                </span>
+    
+                <br>
+                <br>
+    
+                <span>
+                    ​USD, GBP, EUR, CNY, JPY accounts and more.
+                </span>
+                <br>
+                <br>
+                <span>
+                    SEPA/SWIFT/Faster Payment/Fed Wire Payments.
+                </span>
+                <br>
+                <br>
+                <span>
+                    BTC, ETH, LTC, USDT, BAT, PAX, USDC, EOS cryptocurrencies. 
+                </span>
+    
+    
+            </p>
+
         </div>
        
+    </div>
+      
+
+</section>
+
+
+
+<!-------Fintech-->
+
+
+<section class="fintech" id="fintech">
+    <div>
+        <div class="fintechdiv">
+            <div class="fintechdivdiv">
+                <h2>
+                    <span style="font-weight: bold;">
+                        Club Swan
+        
+                    </span>
+                    
+                    <span style="font-weight:bold ;"> Partners</span>
+                    <span style="font-weight: bold; color: #1962c2;"> FinTech</span>
+        
+        
+                </h2>
+
+
+
+                <div class="svgdiv">
+                    <div>
+                        <div class="svgdivdiv">
+                            <div style="padding: 10%;">
+                                <img src="fintech.svg">
+    
+                            </div>
+                            
+                            
+                            
+    
+                        </div>
+                        <div>
+                            <h3 style="text-align: center;">FinTech</h3>
+    
+                        </div>
+                        
+
+                    </div>
+
+                    <div>
+                        <div class="svgdivdiv">
+                            <div style="padding: 10%;">
+                                <img src="onlineplatforms.svg">
+    
+                            </div>
+
+                        </div>
+
+                        <div>
+                                <h3 style="text-align: center;">Online Platforms</h3>
+        
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="svgdivdiv">
+                            <div style="padding: 10%;">
+                                <img src="startups.svg">
+    
+                            </div>
+                            
+    
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: center;">Start-ups</h3>
+    
+                        </div>
+
+                    </div>
+
+                    
+                   
+                        
+
+                
+                    
+
+                    
+                    
+                    
+
+                </div>
+        
+                <p>
+                    <span>
+                        FinTech start-ups can use any any one or all of our services to kick off their own digital FinTech platform.
+                    </span>
+        
+                    <br>
+                    <br>
+        
+                    <span>
+                        Club Swan Partners offers its services as a complete white-label solution which enables you to go to market globally, quickly and simply. Avoid issuer and processor integrations in each region, avoid set-up and monthly-minimum fees with multiple service providers, and save the time and cost of building and running a completely new FinTech platform. Remove regulatory headaches using our APIs and our regulatory licenses
+                    </span>
+        
+        
+                </p>
+
+                
+    
+            </div>
+
+
+            <div style="text-align: left; margin-left: 20%; margin-top: 2%;">
+                <a href="#" class="services-btn">Learn more</a>
+            </div>
+
+            <div id="appModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    
+                    
+                    <div>
+        
+                        <div>
+                            <h2 ><span >APP</span></h2>
+        
+                            <p><span >Provide instant savings and<br>
+                                cash-back rewards to your customers.​</span></p>
+        
+        
+                                <ul >
+                                    <li>
+                                    <span>Up to 22% instant cash-back rewards<br>
+                                    ​</span>
+                                    </li>
+                                    <li>
+                                    <span>Gift cards for friends or family members​</span><br>
+                                    <span>​</span>
+                                    </li>
+                                    <li>
+                                    <span>Instantly downloadable e-vouchers to use online or in store​</span>
+                                    </li>
+                                    <li>
+                                        <span>Search functionality to help your customers find their favourite shops, restaurants and  Entertainment venues where they can take advantage of instant cash rewards.  Amazon, Target, Adidas, and hundreds more top brands and merchants​​</span>
+                                    </li>
+                                    <li>
+                                        <span>Keep track of their instant rewards earnings</span>
+                                    </li>
+                                </ul>
+                            
+        
+                        </div>
+        
+                        
+                        
+                        
+        
+        
+                        
+                    </div>
+        
+                    <div style="background-color: #fff;">
+                        <div class="div-close">
+                            <span class="close" id="appClose" style="color: black;">&times;</span>
+        
+                        </div>
+        
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_3d81c8b688d6409f9e96772c4e46a379~mv2.png/v1/fill/w_344,h_602,al_c,q_85,usm_0.66_1.00_0.01/traditional_currencies_shadow.webp" style="display:block;margin-left: auto;margin-right: auto; width: 60%;">
+        
+                        </div>
+        
+                        <div style="float: right; margin-right: 4%;">
+                            <i class="fa fa-caret-square-o-left fa-2x" id="appBack" style="color: blue;" aria-hidden="true"></i>
+                            <i class="fa fa-caret-square-o-right fa-2x" id="appForward" style="color: blue;" aria-hidden="true"></i>
+                        
+                        </div>
+        
+                        
+                        
+                    </div>
+                  
+                </div>
+              
+            </div>
+            
+    
+    
+        </div>
+
+
+
+
+
+        <div class="fintechcont">
+            <h2>
+                <span style="font-weight: bold;">
+                    Become a corporate member today, and your customers can automatically become members too.
+                    
+    
+                </span>
+    
+    
+            </h2>
+
+
+            <div style="text-align: left; margin-left: 20%; margin-top: 2%; margin-bottom: 5%; padding-bottom: 2%;">
+                <a href="#" class="services-btn" style="background-color: #fff; color: #1962c2; margin-bottom: 5%;" >Contact us</a>
+            </div>
+
+
+
+
+
+        </div>
+
+        
+
+    </div>
+
+
+</section>
+
+
+
+<section class="footer" style="color: #fff;">
+
+    <div class="footer-div-grid">
+        <div>
+            <p>
+                <span style="font-weight: bold;">Services</span>
+            </p>
+
+            <p><a href="#"><span id="cardsspan">Cards</span></a></p>
+            <p><a href="#"><span id="accspan">Accounts</span></a></p>
+            <p><a href="#"><span id="cryptospan">Crypto</span></a></p>
+            <p><a href="#"><span id="payspan">Payments</span></a></p>
+            <p><a href="#"><span id="conciergespan">Concierge</span></a></p>
+            <p><a href="#"><span id="rewardsspan">Rewards</span></a></p>
+            <p><a href="#"><span id="kycspan">KYC</span></a></p>
+            <p><a href="#"><span id="appspan">App</span></a></p>
+
+            <p>
+                <span style="font-weight: bold;">Start Ups</span>
+            </p>
+
+            <p><a href="#"><span>FinTech</span></a></p>
+
+
+
+        </div>
+        <div>
+            <p>
+                <span style="font-weight: bold;">About Us</span>
+            </p>
+
+            <p><a href="clubSwanPartners.html"><span>Club Swan Partners</span></a></p>
+            <p><a href="compliance.html"><span>Compliance</span></a></p>
+            <p><a href="faqs.html"><span>FAQs</span></a></p>
+
+            <p>
+                <span style="font-weight: bold;">Developers</span>
+            </p>
+
+            <p><a href="apis.html"><span>APIs</span></a></p>
+            <p><a href="dashboard.html"><span>Dashboard</span></a></p>
+            
+
+        </div>
+        <div>
+            <p>
+                <span style="font-weight: bold;">Sales</span>
+            </p>
+
+            <p><a href="contactsales.html"><span>Contact Sales</span></a></p>
+
+            <p>
+                <span style="font-weight: bold;">Legal</span>
+            </p>
+
+            <p style><a href="#"><span style="color: #fff;">Privacy Policy</span></a></p>
+            <p><a href="#" ><span>Terms of Use</span></a></p>
+            
+
+        </div>
+        
+        <div class="footer-social">
+            <div class="footer-social-link">
+                <div><a href="https://www.linkedin.com/company/clubswan/" target="_blank"><img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp"></a> </div>
+                <div><a href="https://www.facebook.com/ClubSwanapp/" target="_blank"><img src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp"></a> </div>
+                <div> <a href="https://twitter.com/clubswanapp" target="_blank"><img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/01ab6619093f45388d66736ec22e5885.webp"></a> </div>
+                <div> <a href="https://www.instagram.com/official_clubswan_app/" target="_blank"> <img src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp"></a></div>
+
+            </div>
+            <div class="footer-support">
+                <div class="footer-support-img"> <img src="https://static.wixstatic.com/media/6d5916_a4fbd14d63c44a5791cb614ca297a536~mv2.png/v1/fill/w_56,h_60,al_c,q_85,usm_0.66_1.00_0.01/swan.webp"></div>
+                <div>
+                    <p style="font-size: 14px;"><span>For queries about transactions, lost cards and accounts, please contact Club Swan’s<br></span>
+                    
+                    
+                        <span style="text-decoration: underline;">customer support team <br></span>
+                    </p>
+
+                    <p style="font-size: 14px;"><span>© Club Swan Limited 2021</span></p>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 </section>
 
 
+
+
+
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+     navLinks.style.top = "0";
+ }
+ function hideMenu(){
+    navLinks.style.top= "-120%";
+ }
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction(){
+    if(window.pageXOffset > sticky){
+        header.classList.add("sticky");
+    } else{
+        header.classList.remove("sticky");
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+ const slider = document.querySelector('.slider');
+
+const leftArrow = document.querySelector('.left');
+const rightArrow = document.querySelector('.right');
+
+
+var sectionIndex = 0;
+
+leftArrow.addEventListener('click', function () {
+    sectionIndex = (sectionIndex > 0)? sectionIndex - 1 : 5;
+    slider.style.transform = 'translate(' + (sectionIndex) * -16.66 + '%)';
+
+ });
+
+rightArrow.addEventListener('click', function () {
+    sectionIndex = (sectionIndex < 5)? sectionIndex + 1 : 0;
+    slider.style.transform = 'translate(' + (sectionIndex) * -16.66 + '%)';
+
+});
+
+
+
+
+
+
+
+
+var modalrewards = document.getElementById("rewardsModal");
+
+// Get the button that opens the modal
+var btnrewards = document.getElementById("rewardsBtn");
+var footerrewards = document.getElementById("rewardsspan");
+
+
+/* back -forward*/
+var rewardsBack = document.getElementById("rewardsBack");
+var conciergeBack = document.getElementById("conciergeBack");
+var conciergeBack2 = document.getElementById("conciergeBack2");
+var conciergeBack3 = document.getElementById("conciergeBack3");
+var conciergeBack4 = document.getElementById("conciergeBack4");
+var conciergeBack5 = document.getElementById("conciergeBack5");
+var conciergeBack6 = document.getElementById("conciergeBack6");
+var appBack = document.getElementById("appBack");
+var kycBack = document.getElementById("kycBack");
+var cardsBack = document.getElementById("cardsBack");
+var accBack = document.getElementById("accBack");
+var cryptoBack = document.getElementById("cryptoBack");
+var payBack = document.getElementById("payBack");
+
+
+
+var rewardsForward = document.getElementById("rewardsForward");
+var conciergeForward = document.getElementById("conciergeForward");
+var conciergeForward2 = document.getElementById("conciergeForward2");
+var conciergeForward3 = document.getElementById("conciergeForward3");
+var conciergeForward4 = document.getElementById("conciergeForward4");
+var conciergeForward5 = document.getElementById("conciergeForward5");
+var conciergeForward6 = document.getElementById("conciergeForward6");
+var appForward = document.getElementById("appForward");
+var kycForward = document.getElementById("kycForward");
+var cardsForward = document.getElementById("cardsForward");
+var accForward = document.getElementById("accForward");
+var cryptoForward = document.getElementById("cryptoForward");
+var payForward = document.getElementById("payForward");
+
+
+/* back - forward function --*/
+
+rewardsBack.onclick=function(){
+    modalpay.style.display= "block";
+    modalrewards.style.display = "none";
+}
+
+conciergeBack.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+
+conciergeBack2.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeBack3.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeBack4.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeBack5.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeBack6.onclick=function(){
+    modalrewards.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+
+appBack.onclick=function(){
+    modalconcierge.style.display= "block";
+    modalapp.style.display = "none";
+}
+
+kycBack.onclick=function(){
+    modalapp.style.display= "block";
+    modalkyc.style.display = "none";
+}
+
+cardsBack.onclick=function(){
+    modalkyc.style.display= "block";
+    modalcards.style.display = "none";
+}
+
+accBack.onclick=function(){
+    modalcards.style.display= "block";
+    modalacc.style.display = "none";
+}
+
+cryptoBack.onclick=function(){
+    modalacc.style.display= "block";
+    modalcrypto.style.display = "none";
+}
+
+payBack.onclick=function(){
+    modalcrypto.style.display= "block";
+    modalpay.style.display = "none";
+}
+
+
+
+
+
+
+rewardsForward.onclick=function(){
+    modalconcierge.style.display= "block";
+    modalrewards.style.display = "none";
+}
+
+conciergeForward.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+
+conciergeForward2.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeForward3.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeForward4.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeForward5.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+conciergeForward6.onclick=function(){
+    modalapp.style.display= "block";
+    modalconcierge.style.display = "none";
+}
+
+appForward.onclick=function(){
+    modalkyc.style.display= "block";
+    modalapp.style.display = "none";
+}
+
+kycForward.onclick=function(){
+    modalcards.style.display= "block";
+    modalkyc.style.display = "none";
+}
+
+cardsForward.onclick=function(){
+    modalacc.style.display= "block";
+    modalcards.style.display = "none";
+}
+
+accForward.onclick=function(){
+    modalcrypto.style.display= "block";
+    modalacc.style.display = "none";
+}
+
+cryptoForward.onclick=function(){
+    modalpay.style.display= "block";
+    modalcrypto.style.display = "none";
+}
+
+payForward.onclick=function(){
+    modalrewards.style.display= "block";
+    modalpay.style.display = "none";
+}
+
+
+
+
+
+
+// Get the <span> element that closes the modal
+var spanrewards = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks the button, open the modal 
+btnrewards.onclick = function() {
+  modalrewards.style.display = "block";
+}
+
+footerrewards.onclick = function() {
+  modalrewards.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanrewards.onclick = function() {
+  modalrewards.style.display = "none";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalrewards) {
+    modalrewards.style.display = "none";
+  }
+}
+
+
+
+   // Get the modal
+   var modalconcierge = document.getElementById("conciergeModal");
+
+   // Get the button that opens the modal
+   var btnconcierge = document.getElementById("conciergeBtn");
+   var footerconcierge = document.getElementById("conciergespan");
+   
+   // Get the <span> element that closes the modal
+   var spanconcierge = document.getElementsByClassName("close")[1];
+   var spanconcierge2 = document.getElementsByClassName("close")[2];
+   var spanconcierge3 = document.getElementsByClassName("close")[3];
+   var spanconcierge4 = document.getElementsByClassName("close")[4];
+   var spanconcierge5 = document.getElementsByClassName("close")[5];
+   var spanconcierge6 = document.getElementsByClassName("close")[6];
+   
+   // When the user clicks the button, open the modal 
+   btnconcierge.onclick = function() {
+     modalconcierge.style.display = "block";
+   }
+
+   footerconcierge.onclick = function() {
+     modalconcierge.style.display = "block";
+   }
+   
+   // When the user clicks on <span> (x), close the modal
+   spanconcierge.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+
+   spanconcierge2.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+
+   spanconcierge3.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+
+   spanconcierge4.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+
+   spanconcierge5.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+
+   spanconcierge6.onclick = function() {
+     modalconcierge.style.display = "none";
+   }
+   
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modalconcierge) {
+       modalconcierge.style.display = "none";
+     }
+   }
+   
+
+
+   var modalapp = document.getElementById("appModal");
+
+// Get the button that opens the modal
+var btnapp = document.getElementById("appBtn");
+var footerapp = document.getElementById("appspan");
+
+
+// Get the <span> element that closes the modal
+var spanapp = document.getElementsByClassName("close")[7];
+
+// When the user clicks the button, open the modal 
+btnapp.onclick = function() {
+  modalapp.style.display = "block";
+}
+
+footerapp.onclick = function() {
+  modalapp.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanapp.onclick = function() {
+  modalapp.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalapp) {
+    modalapp.style.display = "none";
+  }
+}
+
+
+    // Get the modal
+    var modalkyc = document.getElementById("kycModal");
+
+    // Get the button that opens the modal
+    var btnkyc = document.getElementById("kycBtn");
+    var footerkyc = document.getElementById("kycspan");
     
+    // Get the <span> element that closes the modal
+    var spankyc = document.getElementsByClassName("close")[8];
+    
+    // When the user clicks the button, open the modal 
+    btnkyc.onclick = function() {
+      modalkyc.style.display = "block";
+    }
+
+    footerkyc.onclick = function() {
+      modalkyc.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spankyc.onclick = function() {
+      modalkyc.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalkyc) {
+        modalkyc.style.display = "none";
+      }
+    }
+
+
+        // Get the modal
+var modalcards = document.getElementById("cardsModal");
+
+// Get the button that opens the modal
+var btncards = document.getElementById("cardsBtn");
+var footercards = document.getElementById("cardsspan");
+
+
+// Get the <span> element that closes the modal
+var spancards = document.getElementsByClassName("close")[9];
+
+// When the user clicks the button, open the modal 
+btncards.onclick = function() {
+  modalcards.style.display = "block";
+}
+
+footercards.onclick = function() {
+  modalcards.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spancards.onclick = function() {
+  modalcards.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalcards) {
+    modalcards.style.display = "none";
+  }
+}
+
+
+    // Get the modal
+    var modalacc = document.getElementById("accModal");
+
+    // Get the button that opens the modal
+    var btnacc = document.getElementById("accBtn");
+    var footeracc = document.getElementById("accspan");
+    
+    // Get the <span> element that closes the modal
+    var spanacc = document.getElementsByClassName("close")[10];
+    
+    // When the user clicks the button, open the modal 
+    btnacc.onclick = function() {
+      modalacc.style.display = "block";
+    }
+
+    footeracc.onclick = function() {
+      modalacc.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spanacc.onclick = function() {
+      modalacc.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalacc) {
+        modalacc.style.display = "none";
+      }
+    }
+    
+    
+        // Get the modal
+    var modalcrypto = document.getElementById("cryptoModal");
+    
+    // Get the button that opens the modal
+    var btncrypto= document.getElementById("cryptoBtn");
+    var footercrypto= document.getElementById("cryptospan");
+    
+    // Get the <span> element that closes the modal
+    var spancrypto = document.getElementsByClassName("close")[11];
+    
+    // When the user clicks the button, open the modal 
+    btncrypto.onclick = function() {
+      modalcrypto.style.display = "block";
+    }
+
+    footercrypto.onclick = function() {
+      modalcrypto.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spancrypto.onclick = function() {
+      modalcrypto.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalcrypto) {
+        modalcrypto.style.display = "none";
+      }
+    }
+    
+        // Get the modal
+    var modalpay = document.getElementById("payModal");
+    
+    // Get the button that opens the modal
+    var btnpay = document.getElementById("payBtn");
+    var footerpay = document.getElementById("payspan");
+    
+    // Get the <span> element that closes the modal
+    var spanpay = document.getElementsByClassName("close")[12];
+    
+    // When the user clicks the button, open the modal 
+    btnpay.onclick = function() {
+      modalpay.style.display = "block";
+    }
+
+    footerpay.onclick = function() {
+      modalpay.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    spanpay.onclick = function() {
+      modalpay.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalpay) {
+        modalpay.style.display = "none";
+      }
+    }
+    
+
+</script>
 </body>
 </html>

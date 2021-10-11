@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+        .container {
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+
+        }
+
+        .carousel {
+            border: 2px solid red;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            height: 100%;
+            display: flex;
+            width: 600%;
+            border: 1px solid blue;
+        }
+
+        .slider section {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .controls .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .controls .arrow i {
+            font-size: 40px;
+            font-weight: lighter;
+            color: #fff;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .modal{
+    /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+        }
+
+        .modal-slide {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #21201e;
+            margin: auto;
+            border: 1px solid #888;
+            width: 100%;
+            height: 100%;
+        }
+
+.modal-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.modal-slide h2{
+    margin-top: 10%;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #094496;
+    text-underline-offset: 0.4em;
+}
+
+.modal-slide p{
+    margin-top: 12%;
+    margin-left: 12%;
+    margin-right: 4%;
+    font-size:22px;
+    color: #fff;
+}
+
+.modal-slide li{
+    font-size: 15px;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto auto 50px;
+    height: 100%;
+}
+
+.slide-header{
+    grid-column: 1 / -1;
+    background-color: #21201e;
+
+
+}
+
+.slide-footer{
+    grid-column: 1 / -1;
+    background-color: #21201e;
+}
+
+.slide-more {
+            background-color: #21201e;
+            margin: auto;
+            border: 1px solid #888;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section>
+                        <div class="modal-slide">
+            
+                            <div>
+                
+                                <img src="https://static.wixstatic.com/media/6d5916_8dd557137f4449d18bfa7ce5e7dca022~mv2.jpg/v1/fill/w_601,h_601,al_c,q_85,usm_0.66_1.00_0.01/shutterstock_1543615334_square.webp">
+                                
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="close" id="conciergeClose">&times;</span>
+                
+                                </div>
+                
+                                <div>
+                                    <h2 ><span >24/7 Virtual Assistant and Concierge</span></h2>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >Provide a live chat concierge service to your customers, 
+                                        with your logo on it.​​</span></p>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >This is not a chat bot but a live person trained to deliver exception value and an unparalleled experience with each interaction​.​​</span></p>
+                
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 4%;"><span >Gives your customers 24/7 access to our professional, multi–language concierge team. All requests, large or small, are handled with care and efficiency..​​</span></p>
+                                    
+                                    <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 8%;"><span >Event & Ticket Procurement, Travel Planning and wholesale travel booking services, Reservations and Booking requests, Special requests, Product/Services payments, and more.​​​</span></p>
+                
+                
+                                        
+                                    
+                
+                                </div>
+                
+                                <div style="float: right; margin-right: 4%;">
+                                    <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                
+                                </div>
+                
+                
+                
+                                
+                                
+                
+                
+                                
+                            </div>
+                          
+                        </div>
+
+
+                    </section>
+                    <section>
+                        <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_6f9097af9ffa4ef7a41d32eb60594f69~mv2.jpeg/v1/fill/w_601,h_601,al_c,q_85,usm_0.66_1.00_0.01/chelsea-gates-0653_wY0nR.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div>
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >
+                                    LUXURY VACATIONS</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >Let us source and book your luxury vacations, we will help you plan your itinerary and take care of the reservations, while you enjoy your adventures for up to 40% less than standard rates. On a recent holiday booking to the Maldives, Club Swan prices were 21% cheaper than those quoted on Expedia, Booking.com and Hotels.com, saving the customer over $1,000 on a like for like comparison.*</span></p>
+            
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+                </section>
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_524248cd2ff141e28329b95a43ff7fc9~mv2.jpeg/v1/fill/w_599,h_595,al_c,q_80,usm_0.66_1.00_0.01/shutterstock_462101287.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div>
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >UNFORGETTABLE EXPERIENCES</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >
+                                    Gain access to unique and high demand experiences. Attend glamorous red-carpet events, swim with dolphins and turtles, get a private box or VIP tickets for sell-out shows. If you need an adrenaline rush, let us book you a gravity defying spin in a fighter jet, or an exhilarating ride with a professional formula one driver at legendary racetracks across the globe.​​
+                                </span></p>
+            
+                                
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_a7b881ea9c834f0eac1b4fc92786f5ad~mv2.png/v1/fill/w_580,h_580,al_c,q_85,usm_0.66_1.00_0.01/image21-e1591784742155.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div>
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >POLE POSITION AT SPORTING EVENTS</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;"><span >
+                                    Get the prime seats at major sporting events. Drink champagne in the pits at Formula One races, Enjoy Pink Gin and strawberries in front row seats while Nadal and Federer own the courts of the US Open. If you prefer something more physical, rub shoulders with Royalty while you stomp the divots on the polo fields, or do a round of golf on the fairways of the Hong Long Golf Club.
+                                    ​​</span>
+                                </p>
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="modal-slide">
+            
+                        <div>
+                            <img src="https://static.wixstatic.com/media/6d5916_5f42a94b7a5241f28df8983c522c1db1~mv2.jpeg/v1/fill/w_607,h_607,al_c,q_85,usm_0.66_1.00_0.01/AdobeStock_3024181.webp">
+            
+                            
+                            
+                        </div>
+                        <div>
+                            <div>
+                                <span class="close" id="conciergeClose">&times;</span>
+            
+                            </div>
+            
+                            <div>
+                                <h2 ><span >LUXURY TRAVEL</span></h2>
+            
+                                <p style="font-size: 14px; margin-top: 4% ; margin-bottom: 25%;">
+                                    <span >
+                                        Whether you need a super yacht, private jet or by rail on the Orient-Express, we make it happen. We can arrange VIP car rentals, helicopter transfers or just about any mode of transport you desire. You will also benefit from up to 50% off business and first-class flights as well as favourable rates on other luxury transport. If you don’t want to be in the driving seat, we will provide you with professional crew.​​
+                                </span>
+                                
+                                </p>
+            
+            
+                                    
+                                
+            
+                            </div>
+            
+                            <div style="float: right; margin-right: 4%;">
+                                <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                            
+                            </div>
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        </div>
+                      
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="slide-more">
+
+                        <div class="grid-container">
+
+                            <div class="slide-header">
+                                <span class="close" id="conciergeClose" style="text-align:right;">&times;</span>
+                                <span style="color: #fff;">
+                                    <h2 style="text-align: center;">
+                                        MORE SERVICES
+    
+                                    </h2>
+                                    
+                                </span>
+                              
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_e94e9e0b6b5541479d50165b8b4ab429~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/personal-shopping.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Personal Shopping
+                                        <br>
+                                        <br>
+                                        If you don’t have the time to shop, we can find that designer watch you spotted on a celebrity’s arm, or help you purchase your wardrobe for a night out or an exclusive beach or ski holiday. We can shop for furniture for your new home, co-ordinate designers and hire professional services.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_8dcf6473a84e4d8ea216b5e5bdc01720~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/business-event-management.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Business and personal event management
+                                        <br>
+                                        <br>
+                                        If you need to plan an event, whether it’s an exclusive home dinner party or a massive corporate launch, we can do it all for you. Let us give you design ideas for the décor, source the venue and set up the catering. We manage both private and corporate events. All you need to do is arrive.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_9e342d3537ba4601a35ef7022903a82e~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/health-wellness.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Health and wellness services
+                                        <br>
+                                        <br>
+                                        Access fabulous spas and treatment centres when you need a break. We can also help you source the best doctors and health professionals wherever you are in the world. From beauty treatments, plastic surgery or cosmetic dentistry, we can source the best professionals to suit your needs.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_729e79e879b4453a98feb7010ffafe6e~mv2.jpg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/vip-dining.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        VIP Dining
+                                        <br>
+                                        <br>
+                                        Having trouble getting a table at your favourite restaurant? Access our VIP dining and restaurant booking service to ensure you get the seat with a view. Exclusive reservations for the Chef’s table or your own private dining area. Staying in? get a Michelin Star chef to create a feast in your home.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_da9b68cd320642f9b25ae6282a966d70~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/event-access.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Preferential event access
+                                        <br>
+                                        <br>
+                                        Get premium tickets for events, theatres and concerts. Impress your friends with a private box or get up close and personal with your favourite bands and performers. Get a back-stage pass or VIP access to an event and arrive in style with a limousine and chauffeur and even a bodyguard if needed.
+                                    </p>
+                                </div>
+    
+                            </div>
+    
+                            <div style="margin-left: 10%; display: grid; grid-template-columns: 1fr 3fr;">
+                                <div style="margin-top: 5%;">
+                                    <img src="https://static.wixstatic.com/media/6d5916_a933324baea241129eaa836c1ac9d29b~mv2.jpeg/v1/fill/w_70,h_70,al_c,q_80,usm_0.66_1.00_0.01/relocation-services.webp" style="border-radius: 50%;">
+
+
+                                </div>
+
+                                <div>
+                                    <p style="color: #fff;">
+                                        Relocation services
+                                        <br>
+                                        <br>
+                                        Moving to a new location? Whether it’s a simple city move or an international relocation, we can help you access the services you will need to ensure your move is stress free. We can help with the setting up of bank accounts, legal issues, passports, licences, immigration and emigration services.
+                                    </p>
+                                </div>
+    
+                            </div>
+                
+                        
+                           <div class="slide-footer" style="text-align: right; float: right; margin-right: 4%;">
+    
+                                    <i class="fa fa-caret-square-o-left fa-2x" id="conciergeBack" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-square-o-right fa-2x" id="conciergeForward" style="background-color: aliceblue;" aria-hidden="true"></i>
+                                
+                            </div>
+
+                        </div>
+                        
+            
+            
+            
+                            
+                            
+            
+            
+                            
+                        
+                      
+                    </div>
+
+                </section>
+
+                
+
+
+
+                
+                
+
+
+                
+
+                
+
+    
+    
+                </div>
+    
+                <div class="controls">
+                    <span class="arrow left"> <i class="material-icons">
+                        keyboard_arrow_left
+                        </i> </span>
+                    <span class="arrow right"><i class="material-icons">
+                        keyboard_arrow_right
+                        </i></span>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+    
+
+
+
+
+
+    <script>
+        const slider = document.querySelector('.slider');
+
+        const leftArrow = document.querySelector('.left');
+        const rightArrow = document.querySelector('.right');
+
+
+        var sectionIndex = 0;
+
+        leftArrow.addEventListener('click', function () {
+            sectionIndex = (sectionIndex > 0)? sectionIndex - 1 : 5;
+            slider.style.transform = 'translate(' + (sectionIndex) * -16.667 + '%)';
+
+        });
+
+        rightArrow.addEventListener('click', function () {
+            sectionIndex = (sectionIndex < 5)? sectionIndex + 1 : 0;
+            slider.style.transform = 'translate(' + (sectionIndex) * -16.667 + '%)';
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
